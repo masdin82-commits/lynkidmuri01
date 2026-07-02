@@ -1,4 +1,4 @@
-import { BookOpen, Gift, CheckCircle, Award, Smartphone, Users, ChevronRight } from 'lucide-react';
+import { BookOpen, Gift, CheckCircle, Award, Smartphone, Users, ChevronRight, Calendar, Clock, MapPin } from 'lucide-react';
 import { motion } from 'motion/react';
 import bannerImg from './assets/images/hero_banner_1782962721468.jpg';
 import mentorImg from './assets/images/muri_handayani_1782962735205.jpg';
@@ -50,7 +50,7 @@ export default function App() {
             className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold tracking-widest uppercase"
           >
             <Award className="w-4 h-4" />
-            Kelas Offline Bandung • Juli 2026 (Batch 29)
+            Kelas Offline Bandung • Sabtu, 18 Juli 2026
           </motion.div>
           
           <motion.div
@@ -109,6 +109,42 @@ export default function App() {
             DAFTAR SEKARANG
             <ChevronRight className="w-5 h-5 ml-1.5 group-hover:translate-x-1 transition-transform" />
           </a>
+        </motion.div>
+
+        {/* Waktu & Tempat Event Section */}
+        <motion.div 
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.35 }}
+          className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 sm:p-8 bg-slate-900/60 rounded-2xl border border-slate-800/80 backdrop-blur-sm mb-12 shadow-lg"
+          id="event-schedule-location"
+        >
+          {/* Waktu */}
+          <div className="flex items-start gap-4">
+            <div className="p-3 bg-amber-500/10 rounded-xl text-amber-400 shrink-0">
+              <Calendar className="w-6 h-6" />
+            </div>
+            <div>
+              <p className="text-white text-lg font-extrabold">Sabtu, 18 Juli 2026</p>
+              <div className="flex items-center gap-1.5 text-slate-400 text-sm mt-1">
+                <Clock className="w-4 h-4 text-slate-500" />
+                <span>08.00 - 17.00 WIB</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Tempat */}
+          <div className="flex items-start gap-4 border-t border-slate-800/60 pt-6 md:border-t-0 md:pt-0 md:border-l md:pl-6 md:border-slate-800/60">
+            <div className="p-3 bg-amber-500/10 rounded-xl text-amber-400 shrink-0">
+              <MapPin className="w-6 h-6" />
+            </div>
+            <div>
+              <p className="text-white text-lg font-extrabold">Kantor SBO</p>
+              <p className="text-slate-400 text-sm mt-1 leading-relaxed">
+                Jl. Cihanjuang No.132, Parongpong, Bandung Barat, Jawa Barat
+              </p>
+            </div>
+          </div>
         </motion.div>
 
         {/* Structured Info: Materi & Bonus Column Grids */}
@@ -175,10 +211,6 @@ export default function App() {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="prose prose-invert max-w-none bg-slate-900/30 p-8 rounded-2xl border border-slate-800/50 backdrop-blur-sm mb-16 space-y-6"
         >
-          <h3 className="text-2xl font-bold text-white tracking-tight border-b border-slate-800 pb-3 uppercase">
-            Deskripsi Kelas
-          </h3>
-          
           <p className="text-slate-300 leading-relaxed text-base sm:text-lg">
             Saya paham, sebagian orang lebih senang belajar langsung secara tatap muka (offline) dibanding dengan metode belajar online (via zoom atau video).
           </p>
@@ -268,10 +300,9 @@ export default function App() {
       </main>
 
       {/* Footer Section */}
-      <footer className="mt-24 border-t border-slate-900 pt-8 pb-12 text-center text-xs text-slate-600">
+      <footer className="mt-16 border-t border-slate-900 pt-6 pb-6 text-center text-xs text-slate-600">
         <div className="max-w-4xl mx-auto px-4">
-          <p>© {new Date().getFullYear()} SBO Bandung. Sekolah Bisnis Online. All Rights Reserved.</p>
-          <p className="mt-1">Jl. Cihanjuang No.132, Parongpong, Bandung Barat, Jawa Barat</p>
+          <p>© Lynkidhub. All Rights Reserved.</p>
         </div>
       </footer>
 
