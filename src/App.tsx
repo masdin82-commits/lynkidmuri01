@@ -85,7 +85,6 @@ export default function App() {
             className="w-full h-auto object-contain hover:scale-[1.01] transition-transform duration-500"
             referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
         </motion.div>
 
         {/* Primary CTA Block Above Content */}
