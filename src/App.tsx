@@ -1,4 +1,4 @@
-import { BookOpen, Gift, CheckCircle, Award, Smartphone, Users, ChevronRight, Calendar, Clock, MapPin } from 'lucide-react';
+import { BookOpen, Gift, CheckCircle, Award, Smartphone, Users, ChevronRight, Calendar, Clock, MapPin, ShieldCheck } from 'lucide-react';
 import { motion } from 'motion/react';
 import bannerImg from './assets/images/hero_banner_1782962721468.jpg';
 import mentorImg from './assets/images/muri_handayani_1782962735205.jpg';
@@ -281,13 +281,18 @@ export default function App() {
           </h3>
 
           {/* Pricing Box */}
-          <div className="bg-slate-900/80 py-4 px-6 rounded-xl border border-slate-800 max-w-sm mx-auto my-6 space-y-2">
+          <div className="bg-slate-900/80 p-6 rounded-2xl border border-slate-800 max-w-sm mx-auto my-6 space-y-3">
             <p className="text-xs font-bold uppercase tracking-widest text-slate-400">Investasi Belajar</p>
             <div className="flex items-center justify-center gap-4">
               <span className="text-slate-500 text-base line-through decoration-red-500 decoration-2 font-medium">Rp2.500.000</span>
               <span className="text-amber-400 font-black text-3xl tracking-tight">Rp1.850.000</span>
             </div>
             <p className="text-xs text-emerald-400 font-semibold tracking-wide">Hemat Rp650.000 selama masa promo!</p>
+            
+            <div className="pt-2 border-t border-slate-800/60 flex items-center justify-center gap-2 text-xs text-amber-500 font-bold uppercase tracking-wider">
+              <ShieldCheck className="w-4 h-4 text-amber-400 shrink-0" />
+              <span>Garansi Balik Modal 100%</span>
+            </div>
           </div>
 
           <p className="text-slate-400 text-sm max-w-md mx-auto">
