@@ -279,6 +279,17 @@ export default function App() {
           <h3 className="text-2xl sm:text-3xl font-extrabold text-white">
             Siap Memulai Bisnis Anda Dari Rumah?
           </h3>
+
+          {/* Pricing Box */}
+          <div className="bg-slate-900/80 py-4 px-6 rounded-xl border border-slate-800 max-w-sm mx-auto my-6 space-y-2">
+            <p className="text-xs font-bold uppercase tracking-widest text-slate-400">Investasi Belajar</p>
+            <div className="flex items-center justify-center gap-4">
+              <span className="text-slate-500 text-base line-through decoration-red-500 decoration-2 font-medium">Rp2.500.000</span>
+              <span className="text-amber-400 font-black text-3xl tracking-tight">Rp1.850.000</span>
+            </div>
+            <p className="text-xs text-emerald-400 font-semibold tracking-wide">Hemat Rp650.000 selama masa promo!</p>
+          </div>
+
           <p className="text-slate-400 text-sm max-w-md mx-auto">
             Klik tombol di bawah ini untuk langsung terhubung dengan layanan pendaftaran resmi kami di LYNK.ID
           </p>
