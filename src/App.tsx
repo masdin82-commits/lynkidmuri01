@@ -82,7 +82,7 @@ export default function App() {
           <img 
             src={bannerImg} 
             alt="Kelas Offline SBO Bandung Banner" 
-            className="w-full h-auto object-cover max-h-[480px] hover:scale-[1.01] transition-transform duration-500"
+            className="w-full h-auto object-contain hover:scale-[1.01] transition-transform duration-500"
             referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
