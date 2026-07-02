@@ -1,0 +1,6 @@
+{
+  "name": "Landing Page Kelas SBO Bandung",
+  "description": "Landing page profesional untuk seminar bisnis online offline Bandung Batch 29 bersama Muri Handayani.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
