@@ -20,19 +20,3 @@ export default defineConfig(() => {
     },
   };
 });
-// vite.config.js
-import { resolve } from 'path'
-import { defineConfig } from 'vite'
-
-export default defineConfig({
-  build: {
-    rollupOptions: {
-      input: {
-        // Halaman utama
-        main: resolve(__dirname, 'index.html'),
-        // Halaman baru yang Anda buat
-        webpagebaru: resolve(__dirname, 'webpagebaru/index.html'),
-      },
-    },
-  },
-})
