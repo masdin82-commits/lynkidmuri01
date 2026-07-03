@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Landing Page CDR</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen flex flex-col justify-between overflow-x-hidden relative">
+
+    <!-- Ambient Glow background -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[400px] bg-gradient-to-b from-blue-500/5 via-transparent to-transparent pointer-events-none blur-3xl"></div>
+
+    <!-- Navigation Header -->
+    <header class="max-w-4xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-6 relative z-20 flex justify-between items-center">
+        <a href="/" class="flex items-center gap-2">
+            <span class="text-amber-400 font-black tracking-wider text-xl">LYNKIDHUB</span>
+            <span class="text-xs bg-slate-800 text-slate-400 px-2 py-0.5 rounded border border-slate-700 font-mono">CDR</span>
+        </a>
+        <div class="text-xs text-slate-400">
+            <a href="/" class="hover:text-amber-400 transition-colors">← Kembali ke Utama</a>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-4xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-12 flex-grow flex flex-col items-center justify-center relative z-10">
+        
+        <div class="bg-slate-900/60 p-8 sm:p-12 rounded-3xl border border-slate-800/80 backdrop-blur-sm max-w-xl text-center space-y-6 shadow-2xl shadow-blue-500/5">
+            <div class="inline-flex p-3 bg-amber-500/10 text-amber-400 rounded-2xl">
+                <i data-lucide="sparkles" class="w-8 h-8"></i>
+            </div>
+            
+            <h1 class="text-3xl font-extrabold text-white tracking-tight">Halaman /cdr Siap Dipakai!</h1>
+            
+            <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+                Ini adalah folder statis mandiri untuk landing page baru Anda. Anda bisa meletakkan seluruh file HTML, CSS, JS, dan gambar Anda di sini!
+            </p>
+
+            <!-- Guide Box -->
+            <div class="bg-slate-950/80 p-5 rounded-2xl border border-slate-800/80 text-left space-y-3">
+                <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400">Panduan Mengupload File Anda:</h4>
+                <ul class="space-y-2 text-xs sm:text-sm text-slate-300">
+                    <li class="flex items-start gap-2">
+                        <span class="text-amber-400 font-bold">•</span>
+                        <span>Letakkan file <code>index.html</code> Anda di dalam folder <code class="text-amber-400">/public/cdr/</code>.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-amber-400 font-bold">•</span>
+                        <span>Letakkan semua file javascript, css, atau gambar Anda di dalam folder <code class="text-amber-400">/public/cdr/</code>.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-amber-400 font-bold">•</span>
+                        <span>Di dalam file <code>index.html</code> Anda, pastikan pautan (link) untuk asset menggunakan jalur relatif, seperti <code>src="./script.js"</code> atau <code>href="./style.css"</code>.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="pt-4">
+                <a href="/" class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-sm font-semibold text-white transition-all">
+                    <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                    Kembali ke Beranda
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="border-t border-slate-900/60 py-6 text-center text-xs text-slate-600">
+        <div class="max-w-4xl mx-auto px-4">
+            <p>© Lynkidhub. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+</body>
+</html>
