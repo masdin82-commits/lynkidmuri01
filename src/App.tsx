@@ -40,7 +40,7 @@ export default function App() {
   if (currentPath === '/newpage' || currentPath === '/newpage/') {
     return <NewLandingPage />;
   }
-  if (currentPath === '/cdr' || currentPath === '/cdr/') {
+  if (currentPath === '/anotherpage' || currentPath === '/anotherpage/') {
   return <cdr />;
 }
 
