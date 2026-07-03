@@ -1,4 +1,3 @@
-import cdr from './components/cdr';
 import { useState, useEffect } from 'react';
 import MainLandingPage from './components/MainLandingPage';
 import NewLandingPage from './components/NewLandingPage';
@@ -40,9 +39,6 @@ export default function App() {
   if (currentPath === '/newpage' || currentPath === '/newpage/') {
     return <NewLandingPage />;
   }
-  if (currentPath === '/anotherpage' || currentPath === '/anotherpage/') {
-  return <cdr />;
-}
 
   // Default fallback route (renders the main Bandung offline class landing page)
   return <MainLandingPage />;
