@@ -1,6 +1,0 @@
-{
-  "name": "Landing Page Ebook NR House",
-  "description": "Landing page responsif dan minimalis untuk ebook digital 'Cuan dari Rumah' dari NR House.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
