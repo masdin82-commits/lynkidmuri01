@@ -1,7 +1,7 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
-   <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PL5TGMC1SM"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -14,10 +14,391 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>Kelas Offline SBO Bandung - Bisnis Online dari Rumah</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- Custom CSS for Animations & Scroll Behaviors -->
+    <style>
+      @keyframes fadeInDown {
+        from {
+          opacity: 0;
+          transform: translateY(-16px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes scaleIn {
+        from {
+          opacity: 0;
+          transform: scale(0.97);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      @keyframes pulseSlow {
+        0%, 100% {
+          opacity: 0.1;
+        }
+        50% {
+          opacity: 0.15;
+        }
+      }
+
+      /* Trigger classes on page load */
+      .animate-fade-in-down {
+        animation: fadeInDown 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+      .animate-fade-in-up {
+        animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+      .animate-scale-in {
+        animation: scaleIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+
+      /* Delays for staggered entrance */
+      .delay-100 { animation-delay: 100ms; }
+      .delay-200 { animation-delay: 200ms; }
+      .delay-300 { animation-delay: 300ms; }
+      .delay-400 { animation-delay: 400ms; }
+      .delay-500 { animation-delay: 500ms; }
+
+      .animate-pulse-slow {
+        animation: pulseSlow 4s ease-in-out infinite;
+      }
+    </style>
   </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+  <body class="min-h-screen bg-slate-950 text-slate-100 font-sans selection:bg-amber-500/30 selection:text-amber-200 overflow-x-hidden pb-24 relative">
+    
+    <!-- Absolute Decorative Background Elements -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[600px] bg-gradient-to-b from-amber-500/5 via-transparent to-transparent pointer-events-none blur-3xl animate-pulse-slow"></div>
+    <div class="absolute top-[800px] left-1/4 w-96 h-96 bg-blue-600/5 rounded-full blur-3xl pointer-events-none animate-pulse-slow delay-500"></div>
+
+    <!-- Main Container -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 sm:pt-16 relative z-10">
+      
+      <!-- Header Titles -->
+      <div class="text-center space-y-4 mb-10">
+        <div class="animate-fade-in-down inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold tracking-widest uppercase">
+          <i data-lucide="award" class="w-4 h-4"></i>
+          Kelas Offline Bandung • Sabtu, 18 Juli 2026
+        </div>
+        
+        <div class="animate-fade-in-up delay-100 space-y-2 opacity-0" style="animation-fill-mode: forwards;">
+          <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white uppercase">
+            Kelas Offline
+            <span class="block text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 mt-1">
+              Bisnis Online Dari Rumah
+            </span>
+          </h1>
+          <p class="text-lg sm:text-xl font-medium text-slate-400 tracking-wider uppercase pt-2">
+            Produk Digital, Produk Fisik, & Jasa
+          </p>
+        </div>
+      </div>
+
+      <!-- Hero Image Banner Section -->
+      <div class="animate-scale-in delay-200 opacity-0 relative rounded-2xl overflow-hidden border border-slate-800/80 shadow-2xl shadow-amber-500/5 mb-12 bg-slate-900" style="animation-fill-mode: forwards;" id="banner">
+        <img 
+          src="./src/assets/images/hero_banner_1782962721468.jpg" 
+          alt="Kelas Offline SBO Bandung Banner" 
+          class="w-full h-auto object-contain hover:scale-[1.01] transition-transform duration-500"
+          referrerpolicy="no-referrer"
+          onerror="this.src='./assets/images/hero_banner_1782962721468.jpg'"
+        />
+      </div>
+
+      <!-- Primary CTA Block Above Content -->
+      <div class="animate-fade-in-up delay-300 opacity-0 flex flex-col items-center justify-center text-center p-6 bg-slate-900/60 rounded-2xl border border-slate-800/80 backdrop-blur-sm mb-12" style="animation-fill-mode: forwards;">
+        <p class="text-amber-400 font-bold uppercase tracking-widest text-xs mb-3 flex items-center gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
+          Kuota Terbatas! Amankan Slot Anda Sekarang
+        </p>
+        <a 
+          href="https://lynk.id/lynkidhub/andP75b/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group relative inline-flex items-center justify-center bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-extrabold text-base px-8 py-4 rounded-xl transition-all duration-300 transform hover:-translate-y-0.5 shadow-lg hover:shadow-amber-500/20 w-full sm:w-auto min-w-[280px]"
+          id="primary-cta-btn"
+        >
+          DAFTAR SEKARANG
+          <i data-lucide="chevron-right" class="w-5 h-5 ml-1.5 group-hover:translate-x-1 transition-transform"></i>
+        </a>
+      </div>
+
+      <!-- Waktu & Tempat Event Section -->
+      <div class="animate-fade-in-up delay-300 opacity-0 grid grid-cols-1 md:grid-cols-2 gap-6 p-6 sm:p-8 bg-slate-900/60 rounded-2xl border border-slate-800/80 backdrop-blur-sm mb-12 shadow-lg" style="animation-fill-mode: forwards;" id="event-schedule-location">
+        <!-- Waktu -->
+        <div class="flex items-start gap-4">
+          <div class="p-3 bg-amber-500/10 rounded-xl text-amber-400 shrink-0">
+            <i data-lucide="calendar" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <p class="text-white text-lg font-extrabold">Sabtu, 18 Juli 2026</p>
+            <div class="flex items-center gap-1.5 text-slate-400 text-sm mt-1">
+              <i data-lucide="clock" class="w-4 h-4 text-slate-500"></i>
+              <span>08.00 - 17.00 WIB</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tempat -->
+        <div class="flex items-start gap-4 border-t border-slate-800/60 pt-6 md:border-t-0 md:pt-0 md:border-l md:pl-6 md:border-slate-800/60">
+          <div class="p-3 bg-amber-500/10 rounded-xl text-amber-400 shrink-0">
+            <i data-lucide="map-pin" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <p class="text-white text-lg font-extrabold">Kantor SBO</p>
+            <p class="text-slate-400 text-sm mt-1 leading-relaxed">
+              Jl. Cihanjuang No.132, Parongpong, Bandung Barat, Jawa Barat
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Structured Info: Materi & Bonus Column Grids -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        
+        <!-- List Materi -->
+        <div class="animate-fade-in-up delay-400 opacity-0 bg-slate-900/40 p-6 rounded-2xl border border-slate-800/60 relative overflow-hidden group hover:border-amber-500/20 transition-colors" style="animation-fill-mode: forwards;">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-amber-500/5 rounded-bl-full pointer-events-none"></div>
+          <h3 class="text-xl font-bold text-white mb-5 flex items-center gap-2.5">
+            <span class="p-1.5 bg-amber-500/10 rounded-lg text-amber-400">
+              <i data-lucide="book-open" class="w-5 h-5"></i>
+            </span>
+            Materi Pembelajaran
+          </h3>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3 text-slate-300">
+              <span class="flex items-center justify-center w-6 h-6 rounded-full bg-amber-500/10 text-amber-400 text-xs font-bold mt-0.5 shrink-0">1</span>
+              <span class="text-sm sm:text-base leading-relaxed">Pengenalan 50 Produk Digital</span>
+            </li>
+            <li class="flex items-start gap-3 text-slate-300">
+              <span class="flex items-center justify-center w-6 h-6 rounded-full bg-amber-500/10 text-amber-400 text-xs font-bold mt-0.5 shrink-0">2</span>
+              <span class="text-sm sm:text-base leading-relaxed">Optimasi AI untuk Produk Digital</span>
+            </li>
+            <li class="flex items-start gap-3 text-slate-300">
+              <span class="flex items-center justify-center w-6 h-6 rounded-full bg-amber-500/10 text-amber-400 text-xs font-bold mt-0.5 shrink-0">3</span>
+              <span class="text-sm sm:text-base leading-relaxed">Tutorial Lengkap LYNK.ID untuk bisnis produk fisik, digital & jasa</span>
+            </li>
+            <li class="flex items-start gap-3 text-slate-300">
+              <span class="flex items-center justify-center w-6 h-6 rounded-full bg-amber-500/10 text-amber-400 text-xs font-bold mt-0.5 shrink-0">4</span>
+              <span class="text-sm sm:text-base leading-relaxed">Tes minat bakat untuk menentukan bisnis yang tepat</span>
+            </li>
+            <li class="flex items-start gap-3 text-slate-300">
+              <span class="flex items-center justify-center w-6 h-6 rounded-full bg-amber-500/10 text-amber-400 text-xs font-bold mt-0.5 shrink-0">5</span>
+              <span class="text-sm sm:text-base leading-relaxed">Instagram Marketing Organik + Boost Post yang profitable</span>
+            </li>
+            <li class="flex items-start gap-3 text-slate-300">
+              <span class="flex items-center justify-center w-6 h-6 rounded-full bg-amber-500/10 text-amber-400 text-xs font-bold mt-0.5 shrink-0">6</span>
+              <span class="text-sm sm:text-base leading-relaxed">Automation untuk Memudahkan Pemasaran</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- List Bonus -->
+        <div class="animate-fade-in-up delay-400 opacity-0 bg-slate-900/40 p-6 rounded-2xl border border-slate-800/60 relative overflow-hidden group hover:border-amber-500/20 transition-colors" style="animation-fill-mode: forwards;">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-amber-500/5 rounded-bl-full pointer-events-none"></div>
+          <h3 class="text-xl font-bold text-white mb-5 flex items-center gap-2.5">
+            <span class="p-1.5 bg-amber-500/10 rounded-lg text-amber-400">
+              <i data-lucide="gift" class="w-5 h-5"></i>
+            </span>
+            Bonus Eksklusif
+          </h3>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3 text-slate-300">
+              <span class="flex items-center justify-center p-1 bg-amber-500/10 text-amber-400 rounded-lg shrink-0 mt-0.5">
+                <i data-lucide="check-circle" class="w-4 h-4"></i>
+              </span>
+              <span class="text-sm sm:text-base leading-relaxed font-medium">6 Video materi belajar</span>
+            </li>
+            <li class="flex items-start gap-3 text-slate-300">
+              <span class="flex items-center justify-center p-1 bg-amber-500/10 text-amber-400 rounded-lg shrink-0 mt-0.5">
+                <i data-lucide="check-circle" class="w-4 h-4"></i>
+              </span>
+              <span class="text-sm sm:text-base leading-relaxed font-medium">Support Grup 3 Bulan</span>
+            </li>
+            <li class="flex items-start gap-3 text-slate-300">
+              <span class="flex items-center justify-center p-1 bg-amber-500/10 text-amber-400 rounded-lg shrink-0 mt-0.5">
+                <i data-lucide="check-circle" class="w-4 h-4"></i>
+              </span>
+              <span class="text-sm sm:text-base leading-relaxed font-medium">Tools AI membangun personal branding</span>
+            </li>
+            <li class="flex items-start gap-3 text-slate-300">
+              <span class="flex items-center justify-center p-1 bg-amber-500/10 text-amber-400 rounded-lg shrink-0 mt-0.5">
+                <i data-lucide="check-circle" class="w-4 h-4"></i>
+              </span>
+              <span class="text-sm sm:text-base leading-relaxed font-medium">Tools AI Analisa Akun Instagram</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Detailed Description Section -->
+      <section class="animate-fade-in-up delay-500 opacity-0 max-w-none bg-slate-900/30 p-8 rounded-2xl border border-slate-800/50 backdrop-blur-sm mb-16 space-y-6" style="animation-fill-mode: forwards;">
+        <p class="text-slate-300 leading-relaxed text-base sm:text-lg">
+          Saya paham, sebagian orang lebih senang belajar langsung secara tatap muka (offline) dibanding dengan metode belajar online (via zoom atau video).
+        </p>
+
+        <p class="text-slate-300 leading-relaxed text-base sm:text-lg">
+          Untuk itulah kelas ini hadir memenuhi harapan Anda. Selama 8 jam, Anda akan belajar langsung dengan <strong>Muri Handayani</strong>.
+        </p>
+
+        <p class="text-slate-300 leading-relaxed text-base sm:text-lg">
+          Anda akan dipandu bagaimana menjadi sosok yang bisa punya penghasilan besar dengan cara yang cukup sederhana. Namun kuncinya Anda harus memiliki keinginan belajar yang kuat, ketekunan menjalani proses dan sabar meningkatkan progresnya.
+        </p>
+
+        <!-- 6 Hal yang Dapatkan Box -->
+        <div class="bg-slate-900/80 p-6 rounded-xl border border-slate-800/80 my-8">
+          <h4 class="text-amber-400 font-extrabold text-base tracking-wide uppercase mb-4">
+            6 hal ini yang akan Anda dapatkan dari sesi belajarnya:
+          </h4>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="flex items-start gap-3 text-slate-300">
+              <span class="text-amber-500 font-black shrink-0">1.</span>
+              <span class="text-sm leading-relaxed">Pengenalan 50 Produk Digital.</span>
+            </div>
+            <div class="flex items-start gap-3 text-slate-300">
+              <span class="text-amber-500 font-black shrink-0">2.</span>
+              <span class="text-sm leading-relaxed">Optimasi AI untuk Produk Digital.</span>
+            </div>
+            <div class="flex items-start gap-3 text-slate-300">
+              <span class="text-amber-500 font-black shrink-0">3.</span>
+              <span class="text-sm leading-relaxed">Tutorial lengkap LYNK.ID untuk bisnis produk fisik, digital & jasa.</span>
+            </div>
+            <div class="flex items-start gap-3 text-slate-300">
+              <span class="text-amber-500 font-black shrink-0">4.</span>
+              <span class="text-sm leading-relaxed">Tes Minat Bakat untuk Menentukan Bisnis yang Tepat.</span>
+            </div>
+            <div class="flex items-start gap-3 text-slate-300">
+              <span class="text-amber-500 font-black shrink-0">5.</span>
+              <span class="text-sm leading-relaxed">Instagram Marketing Organik + Boost Post yang profitable.</span>
+            </div>
+            <div class="flex items-start gap-3 text-slate-300">
+              <span class="text-amber-500 font-black shrink-0">6.</span>
+              <span class="text-sm leading-relaxed">Automation untuk Memudahkan Pemasaran.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 bg-amber-500/10 p-4 rounded-xl border border-amber-500/20 text-amber-300 mb-8">
+          <i data-lucide="smartphone" class="w-6 h-6 shrink-0 mt-0.5"></i>
+          <p class="text-sm sm:text-base leading-relaxed">
+            Semua itu bisa Anda praktekkan <strong>tanpa menggunakan laptop/komputer</strong>. Cukup mengoptimalkan <strong>smartphone Anda saja</strong>.
+          </p>
+        </div>
+
+        <!-- Mentor Profile Details inside description -->
+        <div class="pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row items-center gap-6">
+          <img 
+            src="./src/assets/images/muri_handayani_1782962735205.jpg" 
+            alt="Muri Handayani Mentor" 
+            class="w-24 h-24 rounded-full object-cover border-2 border-amber-400 shrink-0 shadow-lg"
+            referrerpolicy="no-referrer"
+            onerror="this.src='./assets/images/muri_handayani_1782962735205.jpg'"
+          />
+          <div class="text-center sm:text-left">
+            <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+              <strong>Muri Handayani</strong> sudah menekuni Digital Marketing sejak 2009. Kini giliran Anda mengikuti jejaknya untuk mendapatkan hasil yang sama seperti yang Muri sudah dapatkan, atau bahkan lebih banyak.
+            </p>
+          </div>
+        </div>
+
+        <div class="text-center pt-8 border-t border-slate-800/50">
+          <p class="text-red-400 font-extrabold tracking-widest uppercase text-sm sm:text-base">
+            ⚠️ TEMPAT TERBATAS
+          </p>
+        </div>
+      </section>
+
+      <!-- Final Registration CTA Box -->
+      <div class="animate-fade-in-up delay-500 opacity-0 text-center space-y-4 py-8 px-6 bg-gradient-to-b from-slate-900 to-slate-950 rounded-2xl border-2 border-amber-500/30 max-w-2xl mx-auto shadow-2xl shadow-amber-500/5" style="animation-fill-mode: forwards;">
+        <span class="bg-red-500/10 text-red-400 border border-red-500/30 text-xs font-black uppercase tracking-widest px-3 py-1 rounded-full">
+          Daftar Sekarang Juga
+        </span>
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-white">
+          Siap Memulai Bisnis Anda Dari Rumah?
+        </h3>
+
+        <!-- Pricing Box -->
+        <div class="bg-slate-900/80 p-6 rounded-2xl border border-slate-800 max-w-sm mx-auto my-6 space-y-3">
+          <p class="text-xs font-bold uppercase tracking-widest text-slate-400">Investasi Belajar</p>
+          <div class="flex items-center justify-center gap-4">
+            <span class="text-slate-500 text-base line-through decoration-red-500 decoration-2 font-medium">Rp2.500.000</span>
+            <span class="text-amber-400 font-black text-3xl tracking-tight">Rp1.850.000</span>
+          </div>
+          <p class="text-xs text-emerald-400 font-semibold tracking-wide">Hemat Rp650.000 selama masa promo!</p>
+          
+          <div class="pt-2 border-t border-slate-800/60 flex items-center justify-center gap-2 text-xs text-amber-500 font-bold uppercase tracking-wider">
+            <i data-lucide="shield-check" class="w-4 h-4 text-amber-400 shrink-0"></i>
+            <span>Garansi Balik Modal 100%</span>
+          </div>
+        </div>
+
+        <p class="text-slate-400 text-sm max-w-md mx-auto">
+          Klik tombol di bawah ini untuk langsung terhubung dengan layanan pendaftaran resmi kami di LYNK.ID
+        </p>
+        <div class="pt-2">
+          <a 
+            href="https://lynk.id/lynkidhub/andP75b/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group relative inline-flex items-center justify-center bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-lg px-10 py-5 rounded-xl transition-all duration-300 transform hover:-translate-y-0.5 shadow-xl hover:shadow-amber-500/20 w-full sm:w-auto min-w-[300px]"
+            id="final-cta-btn"
+          >
+            DAFTAR SEKARANG
+            <i data-lucide="chevron-right" class="w-5 h-5 ml-1.5 group-hover:translate-x-1 transition-transform"></i>
+          </a>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="mt-16 border-t border-slate-900 pt-6 pb-6 text-center text-xs text-slate-600">
+      <div class="max-w-4xl mx-auto px-4">
+        <p>© Lynkidhub. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Lucide Icons CDN Script -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      // Initialize Lucide icons on DOM content loaded
+      document.addEventListener('DOMContentLoaded', function() {
+        lucide.createIcons();
+      });
+    </script>
   </body>
 </html>
-
